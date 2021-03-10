@@ -36,13 +36,13 @@ def csMakeItJazzy(chords):
 
   return Jazzy_List
 
-  def csShortestWord(input_str):
-  # initialize word list by splitting input string into an array
-  word_array = input_str.split()
-  # find the smallest string in the array and return the length of the string
-  return len(min(word_array, key = len))
+def csShortestWord(input_str):
+   # initialize word list by splitting input string into an array
+   word_array = input_str.split()
+   # find the smallest string in the array and return the length of the string
+   return len(min(word_array, key = len))
 
-  def csSumOfPositive(input_arr):
+def csSumOfPositive(input_arr):
   # initalize sum int
   Positive_Sum = 0
 
@@ -57,16 +57,16 @@ def csMakeItJazzy(chords):
   # return new sum
   return Positive_Sum
 
-  def csAnythingButFive(start, end):
-    # create number list
-    Number_List = list(range(start, (end+1), 1))
-    # initalize list for no 5s
-    No_5_List = []
+def csAnythingButFive(start, end):
+  # create number list
+  Number_List = list(range(start, (end+1), 1))
+  # initalize list for no 5s
+  No_5_List = []
 
-    # loop over the number list
-    for i, j in enumerate(Number_List):
-        # if there is no 5, add it to the new list
-        if '5' not in str(j):
-            No_5_List.append(j)
-    # return new list
-    return len(No_5_List)
+  # loop over the number list
+  for i, j in enumerate(Number_List):
+      # if there is no 5, add it to the new list
+      if '5' not in str(j):
+          No_5_List.append(j)
+  # return new list
+  return len(No_5_List)

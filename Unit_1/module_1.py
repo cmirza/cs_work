@@ -24,15 +24,8 @@ def csSquareAllDigits(n):
     return int(output_nums)
 
 def csRemoveTheVowels(input_str):
-    # kinda brute force, but works
-    input_str = input_str.replace("a","")
-    input_str = input_str.replace("e","")
-    input_str = input_str.replace("i","")
-    input_str = input_str.replace("o","")
-    input_str = input_str.replace("u","")
-    input_str = input_str.replace("A","")
-    input_str = input_str.replace("E","")
-    input_str = input_str.replace("I","")
-    input_str = input_str.replace("O","")
-    input_str = input_str.replace("U","")
+    #create a string with vowels and loop over it
+    for char in "aeiouAEIOU":
+        #remove the character in the vowels string
+        input_str = input_str.replace(char, '')
     return input_str
