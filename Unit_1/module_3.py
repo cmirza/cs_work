@@ -31,6 +31,13 @@ def csSortedTwoSum(numbers, target):
                 # return the index of the two numbers
                 return numbers.index(num1), numbers.index(num2)
 
+def csFindAddedLetter(str_1, str_2):
+    # loop over the second input string
+    for i in str2:
+        # compare chars in both strings, if they don't match, return the char
+        if str2.count(i) != str_1.count(i):
+            return i
+            
 def csFirstUniqueChar(input_str):
 
     # initalize a list for character indicies
