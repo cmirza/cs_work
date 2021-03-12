@@ -14,7 +14,7 @@ def csReverseString(chars):
   # return revrsed array
   return chars
 
-  def csCheckPalindrome(input_str):
+def csCheckPalindrome(input_str):
   # initalize counter for first (beginning) pointer
   point_1 = 0
   # initialize counter for second (end) pointer
